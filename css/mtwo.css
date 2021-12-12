@@ -23,8 +23,12 @@
 #challIcon,
 #ammoMax,
 #healthBar,
-#timerIcon {
-    display: none;
+#timerIcon,
+#streamContainer,
+#aHolder,
+#endAHolder,
+.youNewDiv {
+    display: none !important;
 }
 
 /* chat */
