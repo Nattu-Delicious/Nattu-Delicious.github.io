@@ -16,7 +16,7 @@
 #ammoIcon,
 #ammoMax,
 #timerIcon {
-    display: none;
+    display: none !important;
 }
 
 /* health */
