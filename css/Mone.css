@@ -1,0 +1,121 @@
+/* Updated 2021/12/07 */
+
+/* global */
+@font-face {
+    font-family: gamefont;
+    src: url(https://fonts.gstatic.com/s/merriweathersans/v14/2-cO9IRs1JiJN1FRAMjTN5zd9vgsFF_5asQTb6hZ2JKZRekViesH.woff2);
+}
+
+:root {
+    --hp-color: #dfafff;
+}
+
+#healthBar,
+#hudClassIcon,
+#maxHP,
+#challIcon,
+#ammoIcon,
+#ammoMax,
+#timerIcon,
+#voiceDisplay {
+    display: none;
+}
+
+/* chat */
+#chatHolder {
+    transition: .3s;
+}
+
+#chatInputHolder {
+    background: none;
+    border: none;
+}
+
+#chatInput {
+    background: none;
+    border: none;
+}
+
+#chatList {
+    background: none;
+}
+/* hp */
+#healthValue {
+    position: fixed;
+    font-size: 50px;
+    left: 35%;
+    bottom: 27%;
+    color: var(--hp-color);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+#healthValueHolder {
+    background: none;
+}
+    
+/* ammo */
+#ammoDisplay {
+    position: fixed;
+    background-color: transparent;
+    background-image: url(https://dummyimage.com/1x1/ffffff/ffffff.png);
+    transform: none;
+    width: 50px;
+    height: 4px;
+    top: calc(50% + 35px);
+    left: calc(50% - 25px);
+    padding: 0;
+    padding-top: 0;
+    padding-left: 0;
+    border-radius: 0;
+}
+
+#ammoVal {
+    position: fixed;
+    font-size: 50px;
+    right: 35%;
+    bottom: 27%;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* weapon */
+#weapDisplay {
+    position: fixed;
+    bottom: 40%;
+}
+.weapKey {
+    font-size: 16px;
+}
+
+/* timer */
+#timerDisplay {
+    background: none;
+    position: fixed;
+    left: 45.5%;
+    bottom: 15%;
+}
+#timerVal {
+    font-size: 45px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* count */
+#streakCount {
+    width: 70px;
+    height: 60px;
+    position: fixed;
+    right: 48.4%;
+    bottom: 7%;
+    border-radius: 0;
+}
+
+#streakVal {
+    font-size: 42px;
+}
+
+#streakIcon {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    left: 47.5%;
+    bottom: 9%;
+}

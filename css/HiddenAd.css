@@ -1,0 +1,8 @@
+
+#aHolder,
+.endAHolder,
+#streamContainer,
+.youNewDiv,
+#voiceDisplay {
+    display: none !important;
+}

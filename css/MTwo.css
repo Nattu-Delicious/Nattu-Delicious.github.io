@@ -1,0 +1,111 @@
+/* Updated 2021/12/08 */
+
+/* global */
+
+@font-face {
+    font-family: gamefont;
+    src: url(https://fonts.gstatic.com/s/baloopaaji2/v15/i7dfIFFzbz-QHZUdV9_UGWZuelmy79QJ1HOSY9DJ6Lf1ZxQ.woff2);
+}
+
+@font-face {
+    font-family: hpammo;
+    src: url(https://fonts.gstatic.com/s/aldrich/v11/MCoTzAn-1s3IGyJMVacY3w.woff2);
+}
+
+:root {
+    --hp-color: #00ff00;
+    --ammo-color: #00ffff;
+}
+
+#ammoIcon,
+#voiceDisplay,
+#hudClassIcon,
+#challIcon,
+#ammoMax,
+#healthBar,
+#timerIcon {
+    display: none;
+}
+
+/* chat */
+
+#chatHolder {
+    transition: .3s;
+}
+
+span {
+    font-size: 20px;
+}
+
+#chatInput {
+    background: none;
+    border: solid 1px black
+}
+
+/* ammo */
+
+#ammoDisplay {
+    position: fixed;
+    background-color: transparent;
+    background-image: url(https://dummyimage.com/1x1/ffffff/ffffff.png);
+    transform: none;
+    width: 50px;
+    height: 4px;
+    top: calc(50% + 35px);
+    left: calc(50% - 25px);
+    padding: 0;
+    padding-top: 0;
+    padding-left: 0;
+    border-radius: 0;
+}
+
+#ammoVal {
+    position: fixed;
+    font-family: hpammo;
+    font-size: 130px;
+    bottom: 2%;
+    right: 30%;
+    color: var(--ammo-color);
+}
+
+/* weapon */
+
+#weapDisplay {
+    position: fixed;
+    bottom: 41%;
+}
+
+.weapKey {
+    font-size: 20px;
+}
+
+/* hp */
+
+#healthValueHolder {
+    position: fixed;
+    background: none;
+    left: 30%;
+    bottom: 1%;
+}
+
+#healthValue {
+    font-family: hpammo;
+    font-size: 130px;
+    color: var(--hp-color);
+}
+
+#maxHP {
+    font-family: hpammo;
+    color: var(--hp-color);
+}
+
+/* timer */
+
+#timerDisplay {
+    background: none;
+}
+
+#timerVal {
+    font-size: 50px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+}

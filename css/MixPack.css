@@ -1,0 +1,143 @@
+/* Mix Pack CSS */
+
+/* global */
+@font-face {
+	font-family: ammo;
+	src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2);
+}
+
+#challIcon,
+#hudClassIcon,
+#voiceDisplay,
+#streamContainer,
+.youNewDiv,
+#aHolder,
+.endAHolder,
+#ammoIcon,
+#ammoMax,
+#timerIcon {
+    display: none;
+}
+
+/* health */
+#healthValue {
+    color: #ff0000;
+    font-size: 40px;
+    position: fixed;
+    left: 40.5%;
+    bottom: 10%;
+}
+
+#maxHP {
+    font-size: 20px;
+    color: white;
+}
+
+#healthValueHolder {
+    background: none;
+}
+
+.healthBarSeg {
+    width: -webkit-fill-available;
+    margin-right: -1px;
+    border-radius: unset;
+    background: transparent;
+}
+
+#healthBar {
+    width: 400px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.2), 2px 2px rgba(0, 0, 0, 0.2), 2px 2px rgba(0, 0, 0, 0.2), 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+}
+
+.hpBSeg {
+    border-radius: unset;
+    box-shadow: unset;
+}
+
+/* weapon */
+#weapDisplay[style*="block"] {
+	display: block !important;
+}
+
+#weapDisplay {
+    bottom: 15px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.weapItem {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.weapIcon {
+    opacity: 0!Important;	
+}
+
+.weapIcon[style*="1"] {
+    opacity: 1 !important;
+}
+
+#weapIconMel {
+    margin: 0 !important;
+    margin-bottom: -15px!important;
+}
+
+.weapKey {
+    display: none;
+}
+
+/* ammo */
+#ammoDisplay {
+    position: fixed;
+    background-color: transparent;
+    background-image: url(https://dummyimage.com/1x1/ffffff/ffffff.png);
+    transform: none;
+    width: 50px;
+    height: 4px;
+    top: calc(50% + 35px);
+    left: calc(50% - 25px);
+    padding: 0;
+    padding-top: 0;
+    padding-left: 0;
+    border-radius: 0;
+}
+
+#ammoVal {
+    position: fixed;
+    font-family: ammo;
+    font-size: 120px;
+    bottom: 1%;
+    right: 32%;
+}
+
+/* timer */
+#timerDisplay {
+    background: none;
+}
+
+#timerVal {
+    font-size: 37px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* chat */
+#chatHolder {
+    transition: .3s;
+}
+
+#chatInput {
+    background: none;
+    border: solid 1px black;
+}

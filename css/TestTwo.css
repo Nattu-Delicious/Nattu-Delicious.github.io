@@ -1,0 +1,166 @@
+/* Updated 2021/12/10 */
+
+/* global */
+@font-face {
+    font-family: gamefont;
+    src: url(https://raw.githubusercontent.com/South-Paw/typeface-vag-rounded/master/files/vag-rounded-400.woff2);
+}
+
+@font-face {
+	font-family: hpammo;
+	src: url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_c5H3gnD_g.woff2);
+}
+
+@font-face {
+    font-family: weaptimer;
+    src: url(https://raw.githubusercontent.com/MOF1/krunker_css/main/css/fonts/EuclidCircularA-Medium.ttf);
+}
+
+:root {
+    --hp-color: #00ff00;
+    --streak-color: #ffffff;
+}
+#challIcon,
+#voiceDisplay,
+.youNewDiv,
+#aHolder,
+#endAHolder,
+#ammoIcon,
+#timerIcon,
+#maxHP,
+#ammoMax,
+#streakIcon {
+    display: none;
+}
+
+/* health */
+#hudClassIcon {
+	position: fixed;
+	bottom: 30px;
+	right: calc(64% - 64px);
+	border-radius: 0;
+	background-color: transparent;
+}
+
+.healthBarSeg {
+    width: -webkit-fill-available;
+    margin-right: -1px;
+    border-radius: unset;
+    background: transparent;
+}
+
+#healthBar {
+    width: 400px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 2.7%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.2), 2px 2px rgba(0, 0, 0, 0.2), 2px 2px rgba(0, 0, 0, 0.2), 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+}
+
+.hpBSeg {
+    border-radius: unset;
+    box-shadow: unset;
+}
+
+#healthValueHolder {
+    position: fixed;
+    background: none;
+    left: 40%;
+    bottom: 4.5%;
+}
+
+#healthValue {
+    font-family: hpammo;
+    font-size: 55px;
+    color: var(--hp-color);
+}
+
+/* ammo */
+#ammoDisplay {
+    height: 130px;
+    background-color: transparent;
+    border-radius: 0;
+    position: fixed;
+    right: 31%;
+    bottom: 2%;
+}
+
+#ammoVal {
+    font-family: hpammo;
+    font-size: 130px;
+    letter-spacing: 1px;
+}
+
+/* chat */
+#chatHolder {
+    transition: .3s;
+}
+
+span {
+    font-size: 15px;
+}
+
+#chatInput {
+    background: none;
+    border: solid 1px black
+}
+
+/* timer */
+#timerDisplay {
+    background: none;
+}
+
+#timerVal {
+    font-family: weaptimer;
+    font-size: 50px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4), 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* weapon */
+#weapDisplay {
+    position: fixed;
+    bottom: 43%;
+}
+
+.weapKey {
+    font-family: weaptimer;
+    font-size: 16px;
+}
+
+/* leader borad */
+#leaderDisplay {
+    border-radius: 0;
+}
+
+/* count */
+
+.countIcon {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+}
+
+#streakCount {
+    background: none;
+}
+
+#streakVal {
+    position: absolute;
+    font-size: 30px;
+    color: var(--streak-color);
+    top: 1340px;
+    right: 50px;
+}
+
+#streakVal::after {
+    position: absolute;
+    font-size: 30px;
+    content: 'Streak';
+    right: 1px;
+    top: 33px;
+}
