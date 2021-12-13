@@ -1,0 +1,11 @@
+
+#aHolder,
+.endAHolder,
+#streamContainer,
+.youNewDiv,
+#voiceDisplay,
+#ammoIcon,
+#timerIcon,
+#hudClassIcon {
+    display: none !important;
+}
