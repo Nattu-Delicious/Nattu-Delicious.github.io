@@ -1,0 +1,26 @@
+
+#aHolder,
+.endAHolder,
+#streamContainer,
+.youNewDiv,
+#voiceDisplay {
+    display: none !important;
+}
+
+.countIcon {
+    width: 60px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#streakVal {
+    position: fixed;
+    font-size: 22px;
+    right: 1.8%;
+}
+
+#streakIcon {
+    position: fixed;
+    right: 3.2%;
+    top: 6.5%;
+}
